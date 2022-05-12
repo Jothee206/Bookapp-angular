@@ -1,0 +1,29 @@
+<form (ngSubmit)="addtoCart()" ></form>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            
+           
+            <th>category</th>
+            <th>title</th>
+            <th>authorname</th>
+            <th>publishedYear</th>
+            <th>description</th>
+            <th>price</th>
+            <th>ratings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books;">
+            
+           
+            <td>{{book.category}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.authorname}}</td>
+            <td>{{book.publishedYear}}</td>
+            <td>{{book.description}}</td>
+            <td>{{book.price}}</td>
+            <td>{{book.ratings}}</td>
+            </tr>
+</table>
+

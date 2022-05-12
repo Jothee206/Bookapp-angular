@@ -1,0 +1,32 @@
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            
+            <th>bookId</th>
+            <th>category</th>
+            <th>title</th>
+            <th>authorname</th>
+            <th>publishedYear</th>
+            <th>description</th>
+            <th>price</th>
+            <th>ratings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books;">
+            
+            <td>{{book.bookId}}</td>
+            <td>{{book.category}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.authorname}}</td>
+            <td>{{book.publishedYear}}</td>
+            <td>{{book.description}}</td>
+            <td>{{book.price}}</td>
+            <td>{{book.ratings}}</td>
+            <td><button type="button" (click)="deleteBooks(book.bookId)" class="btn btn-danger">Delete</button></td>
+           <td><a routerLink="/updatebook/{{book.id}}">updatebook</a></td>
+        </tr>
+    </tbody>
+</table>
+

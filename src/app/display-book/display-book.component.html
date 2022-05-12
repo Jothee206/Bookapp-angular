@@ -1,0 +1,27 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card" style="width: 18rem;">
+      <div *ngFor="let book of books">
+        <h3 class="card-title">Category:{{book.category}}</h3>
+        <img src="assets/images/{{book.imageUrl}}" class="card-img-top" alt="{{book.imageUrl}}">
+      
+        <div class="card-body">
+          <h3 class="card-title">Title:{{book.title}}</h3>
+    <h5 class="card-title">Author:{{book.authorname}}</h5>
+    <h6 class="card-title">Description:{{book.description}}</h6>
+    <h5 class="card-title">year of Published:{{book.publishedYear}}</h5>
+    <h5 class="card-title">price:{{book.price}}</h5>
+    <h5 class="card-title">Ratings:{{book.ratings}}</h5>
+   
+
+  
+   <br>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+   
+    <td><a routerLink="/add-to-cart/{{book.displa-book}}"></a></td>
+    
+  </div>
+</div>
+</div>
+       
+  
